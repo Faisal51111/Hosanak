@@ -1,64 +1,104 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تسجيل الدخول - حصانك</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #8B4513, #D2691E);
-            margin: 0;
-            padding: 0;
-            direction: rtl;
-        }
-        .container {
-            max-width: 375px;
-            margin: 50px auto;
-            background: white;
-            border-radius: 20px;
-            padding: 30px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-            text-align: center;
-        }
-        .container img {
-            width: 120px;
-            margin-bottom: 20px;
-        }
-        input[type="text"],
-        input[type="password"] {
-            width: 100%;
-            padding: 12px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-        }
-        button {
-            background-color: #8B4513;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            width: 100%;
-            font-size: 16px;
-        }
-        button:hover {
-            background-color: #5c3310;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تسجيل الدخول - حصانك</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #8B4513, #D2691E);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #8B4513;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    .forgot {
+      text-align: right;
+      font-size: 14px;
+      margin: 5px 0 15px;
+    }
+
+    .forgot a {
+      color: #8B4513;
+      text-decoration: none;
+    }
+
+    button {
+      background-color: #A0522D;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      width: 100%;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #8B4513;
+    }
+
+    .signup-link {
+      margin-top: 15px;
+      font-size: 14px;
+      display: block;
+    }
+
+    .signup-link a {
+      color: #8B4513;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-
-<div class="container">
-    <img src="logo-hosanak.jpeg" alt="شعار حصانك">
+  <div class="container">
+    <img src="logo-hosanak.jpeg" alt="شعار حصانك" class="logo" />
     <h2>تسجيل الدخول</h2>
-    <form action="index.html" method="get">
-        <input type="text" name="username" placeholder="اسم المستخدم" required>
-        <input type="password" name="password" placeholder="كلمة المرور" required>
-        <button type="submit">دخول</button>
+    <form>
+      <input type="text" placeholder="رقم الهاتف أو البريد الإلكتروني" required />
+      <input type="password" placeholder="كلمة المرور" required />
+      <div class="forgot">
+        <a href="#">نسيت كلمة المرور؟</a>
+      </div>
+      <button type="submit">دخول</button>
     </form>
-</div>
-
+    <div class="signup-link">
+      ليس لديك حساب؟ <a href="signup_with_terms.html">إنشاء حساب</a>
+    </div>
+  </div>
 </body>
 </html>
