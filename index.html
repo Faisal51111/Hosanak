@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>حصانك - Hosanak</title>
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(reg => console.log('تم تسجيل Service Worker', reg))
+        .catch(err => console.error('فشل التسجيل', err));
+    }
+  </script>
+</head>
+<body style="font-family:Arial; text-align:center; margin-top: 50px;">
+  <h1>تطبيق حصانك - Hosanak</h1>
+  <p>هذا نموذج أولي لتطبيق تخرّج بصيغة PWA.</p>
+</body>
+</html>
